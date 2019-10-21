@@ -48,12 +48,12 @@ const paths = {
 		fonts:  './src/fonts/**/*'
 	},
 	output: {
-		css: 		'./public/css/',
-		js: 		'./public/js/',
-		images: './public/img/',
-		fonts: 	'./public/fonts'
+		css: 		'./docs/css/',
+		js: 		'./docs/js/',
+		images: './docs/img/',
+		fonts: 	'./docs/fonts'
 	},
-	public: 	'./public/',
+	public: 	'./docs/',
 };
 
 /**
