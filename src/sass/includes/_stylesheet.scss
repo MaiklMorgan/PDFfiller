@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Arial';
-	src: url('/fonts/Arial.eot');
+	src: url('/PDFfiller/fonts/Arial.eot');
 	src: local('Arial'), local('Arial'),
-		url('/fonts/Arial.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/Arial.woff') format('woff'),
-		url('/fonts/Arial.ttf') format('truetype');
+		url('/PDFfiller/fonts/Arial.eot?#iefix') format('embedded-opentype'),
+		url('/PDFfiller/fonts/Arial.woff') format('woff'),
+		url('/PDFfiller/fonts/Arial.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -12,20 +12,20 @@
 
 @font-face {
 	font-family: 'Arial';
-	src: url('/fonts/Arial-Bold.eot');
+	src: url('/PDFfiller/fonts/Arial-Bold.eot');
 	src: local('Arial-Bold'), local('Arial-Bold'),
-		url('/fonts/Arial-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/Arial-Bold.woff') format('woff'),
-		url('/fonts/Arial-Bold.ttf') format('truetype');
+		url('/PDFfiller/fonts/Arial-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/PDFfiller/fonts/Arial-Bold.woff') format('woff'),
+		url('/PDFfiller/fonts/Arial-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Apple Symbols';
-	src: url('/fonts/Apple-Symbols.ttf');
+	src: url('/PDFfiller/fonts/Apple-Symbols.ttf');
 	src: local('Arial-Bold'), local('Arial-Bold'),
-		url('/fonts/Apple-Symbols.ttf') format('truetype');
+		url('/PDFfiller/fonts/Apple-Symbols.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
