@@ -99,8 +99,14 @@
   }
   @media (max-width: 480px) {
     margin: 0;
-    & > [class*='col-'] {
-      padding: 0 10px 0 0;
+    .p-xs-0{
+      padding: 0;
+    }
+    .pr-xs-0 {
+      padding-right: 0;
+    }    
+    .pl-xs-0 {
+      padding-left: 0;
     }
   }
 }

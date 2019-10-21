@@ -15,25 +15,25 @@ section.pt-6
     main
       form#form.form(action='')
         .row.flex-rows
-          .col-md-7
+          .col-md-7.p-xs-0
             fieldset.form__fieldset
               .row.row-15.form__fieldset--row.mr-0
-                .col-sm-4
+                .col-sm-4.p-xs-0
                   .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
                     .form-label #{cardhoder}
-                .col-md-4.col-sm-3.col-xs-6
+                .col-md-4.col-sm-3.col-xs-6.pl-xs-0
                   .form__fieldset--column
                     .form__fieldset--control
                       input#payment-card-first-name.input-lg.form-control(name='first_name', placeholder='First Name', required='')
-                .col-sm-4.col-xs-6
+                .col-sm-4.col-xs-6.pr-xs-0
                   .form__fieldset--column
                     .form__fieldset--control
                       input#payment-card-last-name.input-lg.form-control(name='last_name', placeholder='Last Name', required='')
               .row.row-15.form__fieldset--row
-                .col-sm-4
+                .col-sm-4.p-xs-0
                   .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
                     .form-label #{number}
-                .col-md-4.col-sm-3.col-xs-12
+                .col-md-4.col-sm-3.col-xs-12.p-xs-0
                   .form__fieldset--column
                     .form__fieldset--control
                       input#payment-card.form-control.input-lg(name='payment_card', placeholder='⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁', required='')
@@ -49,13 +49,13 @@ section.pt-6
                       .logo-payment
                         img(src='/PDFfiller/img/sprite.svg#logo-americanexpress', width='37', alt='americanexpress')
               .row.row-15.form__fieldset--row
-                .col-sm-4.col-xs-6
+                .col-sm-4.col-xs-6.p-xs-0
                   .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
                     .form-label #{date}
                 .col-xs-6.visible-xs
                   .form__fieldset--column.d-flex.justify-center
                     .form-label #{cvv}
-                .col-md-4.col-sm-3.col-xs-6
+                .col-md-4.col-sm-3.col-xs-6.pl-xs-0
                   .form__fieldset--column.d-flex
                     .form__input-wrapper
                       select#month.form__input-wrapper--month.select-xxs(name='month', required='')
@@ -74,12 +74,12 @@ section.pt-6
                         option(value='2019') 2019
                         option(value='2020') 2020
                         option(value='2021') 2021
-                .col-md-4.col-sm-3.col-xs-6
+                .col-md-4.col-sm-3.col-xs-6.pr-xs-0
                   .row.row-15.ml-0
                     .col-sm-6.hidden-xs
                       .form__fieldset--column.d-flex.justify-center
                         .form-label #{cvv}
-                    .col-sm-6.col-xs-12
+                    .col-sm-6.col-xs-12.p-xs-0
                       .form__fieldset--column
                         .form__fieldset--control
                           input#cvc.form-control.input-md(name='cvv', placeholder='XXXX', required='')
@@ -95,16 +95,16 @@ section.pt-6
                                   .tooltip-card__block--header #{american_express}
                                   .tooltip-card__block--content #{digit}
               .row.row-15.form__fieldset--row
-                .col-sm-4
+                .col-sm-4.p-xs-0
                   .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
                     .form-label #{zip_code}
-                .col-sm-4
+                .col-sm-4.p-xs-0
                   .form__fieldset--column
                     .form__fieldset--control
                       input#zip-code.form-control.input-lg(name='zip_code', placeholder='01001', required='')
-          .col-md-5
+          .col-md-5.p-xs-0
             .row
-              .col-md-12.col-sm-6.offset-sm-4
+              .col-md-12.col-sm-6.offset-sm-4.p-xs-0
                 .box.box__payment
                   .row
                     .col-md-12.col-xs-7
@@ -114,8 +114,8 @@ section.pt-6
                         a(href='#')
                           img(src='/PDFfiller/img/logo-paypal.png', width='137', alt='PayPal')
         .row
-          .col-md-7
+          .col-md-7.p-xs-0
             .row
-              .col-md-8.col-sm-6.offset-sm-4
+              .col-md-8.col-sm-6.offset-sm-4.p-xs-0
                 .footer
                   button.btn.btn-warning #{btn}
