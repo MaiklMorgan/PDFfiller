@@ -1,0 +1,17 @@
+{
+  "title": "PDFfiller",
+  "h2": "Thank you for choosing to subscribe to PDFfiller services!",
+  "paypal_title": "Or pay with Paypal",
+  "btn": "Start My Subscription for $19.99/mo.",
+  "cardhoder": "Cardhoder Name",
+  "number": "Card Number",
+  "date": "Exp. Date",
+  "cvv": "CVV/CVC",
+  "mm": "MM",
+  "YYYY": "YYYY",
+  "visa": "Visa, MasterCard",
+  "digit_verification": "3-Digit Verification Number",
+  "american_express": "American Express",
+  "digit": "4-Digit Verification Number",
+  "zip_code": "Zip/Postal Code"
+}

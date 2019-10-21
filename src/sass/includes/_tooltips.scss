@@ -1,0 +1,78 @@
+span.validate-tooltip {
+  background-color: map-get($backgrounds, red);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid map-get($colors, red);
+  border-radius: 5px; 
+  bottom: 37px;
+  left: -20px;
+  min-width: max-content;
+  text-align: center;
+  color: map-get($colors, red);
+  line-height: 17px;
+  font-weight: 700;
+  display: block;
+  font-size: 13px;
+  padding: 8px 9px;
+  position: absolute;
+  z-index: 4;
+  
+  &:before {
+    border-bottom: 1px solid map-get($colors, red);
+    border-right: 1px solid map-get($colors, red);
+    transform: rotate(45deg);
+    background: map-get($backgrounds, red);
+    bottom: -7px;
+    width: 13px;
+    height: 13px;
+    content: '';
+    display: block;
+    left: 50%;
+    position: absolute;
+  }
+  span{
+    font-weight: 500;
+  }
+}
+
+.tooltip-card{
+  background-color: map-get($backgrounds, white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid map-get($colors, gray01);
+  border-radius: 5px; 
+  bottom: 28px;
+  left: -259px;
+  min-width: max-content;
+  padding: 20px;
+  position: absolute;
+  z-index: 4;
+  
+  &:before {
+    border-bottom: 1px solid map-get($colors, gray01);
+    border-right: 1px solid map-get($colors, gray01);
+    transform: rotate(45deg);
+    background: map-get($backgrounds, white);
+    bottom: -7px;
+    right: 12px;
+    width: 13px;
+    height: 13px;
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  &__block{
+    &:first-child{
+      border-right: 1px solid map-get($backgrounds, gray01);
+    }
+    max-width: 138px;
+    line-height: 16px;
+    font-size: 12px;
+    color: map-get($colors, base);
+    &--header{
+      font-weight: 700;
+      margin-top: 14px;
+    }
+  }
+  @media (max-width: 480px) {
+   left: -292px; 
+  }
+}

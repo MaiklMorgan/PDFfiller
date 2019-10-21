@@ -1,0 +1,121 @@
+section.pt-6
+  .container
+    .text-center.mb-5
+      .h2 #{h2}
+      .visible-xs
+        .box__payment-group.d-flex.center-block
+          .logo-payment
+            img(src='/img/sprite.svg#logo-visa', width='37', alt='visa')
+          .logo-payment
+            img(src='/img/sprite.svg#logo-mastercard', width='37', alt='mastercard')
+          .logo-payment
+            img(src='/img/sprite.svg#logo-discover', width='37', alt='discover')
+          .logo-payment
+            img(src='/img/sprite.svg#logo-americanexpress', width='37', alt='americanexpress')
+    main
+      form#form.form(action='')
+        .row.flex-rows
+          .col-md-7
+            fieldset.form__fieldset
+              .row.row-15.form__fieldset--row.mr-0
+                .col-sm-4
+                  .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
+                    .form-label #{cardhoder}
+                .col-md-4.col-sm-3.col-xs-6
+                  .form__fieldset--column
+                    .form__fieldset--control
+                      input#payment-card-first-name.input-lg.form-control(name='first_name', placeholder='First Name', required='')
+                .col-sm-4.col-xs-6
+                  .form__fieldset--column
+                    .form__fieldset--control
+                      input#payment-card-last-name.input-lg.form-control(name='last_name', placeholder='Last Name', required='')
+              .row.row-15.form__fieldset--row
+                .col-sm-4
+                  .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
+                    .form-label #{number}
+                .col-md-4.col-sm-3.col-xs-12
+                  .form__fieldset--column
+                    .form__fieldset--control
+                      input#payment-card.form-control.input-lg(name='payment_card', placeholder='⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁ ⦁⦁⦁⦁⦁', required='')
+                .col-sm-4
+                  .form__fieldset--column.hidden-xs
+                    .box__payment-group.d-flex
+                      .logo-payment
+                        img(src='/img/sprite.svg#logo-visa', width='37', alt='visa')
+                      .logo-payment
+                        img(src='/img/sprite.svg#logo-mastercard', width='37', alt='mastercard')
+                      .logo-payment
+                        img(src='/img/sprite.svg#logo-discover', width='37', alt='discover')
+                      .logo-payment
+                        img(src='/img/sprite.svg#logo-americanexpress', width='37', alt='americanexpress')
+              .row.row-15.form__fieldset--row
+                .col-sm-4.col-xs-6
+                  .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
+                    .form-label #{date}
+                .col-xs-6.visible-xs
+                  .form__fieldset--column.d-flex.justify-center
+                    .form-label #{cvv}
+                .col-md-4.col-sm-3.col-xs-6
+                  .form__fieldset--column.d-flex
+                    .form__input-wrapper
+                      select#month.form__input-wrapper--month.select-xxs(name='month', required='')
+                        option(selected='selected', value='') #{mm}
+                        option(value='01') 01
+                        option(value='02') 02
+                        option(value='03') 03
+                        option(value='04') 04
+                        option(value='05') 05
+                        option(value='06') 06
+                    .description-backside
+                      span.form__input-divider.d-flex.justify-center /
+                    .form__input-wrapper
+                      select#year.form__input-wrapper--year.select-xs(name='year', required='')
+                        option(selected='selected', value='') #{YYYY}
+                        option(value='2019') 2019
+                        option(value='2020') 2020
+                        option(value='2021') 2021
+                .col-md-4.col-sm-3.col-xs-6
+                  .row.row-15.ml-0
+                    .col-sm-6.hidden-xs
+                      .form__fieldset--column.d-flex.justify-center
+                        .form-label #{cvv}
+                    .col-sm-6.col-xs-12
+                      .form__fieldset--column
+                        .form__fieldset--control
+                          input#cvc.form-control.input-md(name='cvv', placeholder='XXXX', required='')
+                          #icon_question
+                            .tooltip-card
+                              .row
+                                .col-md-6.col-xs-6.tooltip-card__block
+                                  img(src='/img/card-back.png', width='108', alt='card-back')
+                                  .tooltip-card__block--header #{visa}
+                                  .tooltip-card__block--content #{digit_verification}
+                                .col-md-6.col-xs-6.tooltip-card__block
+                                  img(src='/img/card-front.png', width='108', alt='card-front')
+                                  .tooltip-card__block--header #{american_express}
+                                  .tooltip-card__block--content #{digit}
+              .row.row-15.form__fieldset--row
+                .col-sm-4
+                  .form__fieldset--column.d-flex.justify-center.text-right.text-right-xs-none
+                    .form-label #{zip_code}
+                .col-sm-4
+                  .form__fieldset--column
+                    .form__fieldset--control
+                      input#zip-code.form-control.input-lg(name='zip_code', placeholder='01001', required='')
+          .col-md-5
+            .row
+              .col-md-12.col-sm-6.offset-sm-4
+                .box.box__payment
+                  .row
+                    .col-md-12.col-xs-7
+                      .box__payment--title.mb-5 #{paypal_title}
+                    .col-md-12.col-xs-5
+                      .box__payment--button
+                        a(href='#')
+                          img(src='/img/logo-paypal.png', width='137', alt='PayPal')
+        .row
+          .col-md-7
+            .row
+              .col-md-8.col-sm-6.offset-sm-4
+                .footer
+                  button.btn.btn-warning #{btn}

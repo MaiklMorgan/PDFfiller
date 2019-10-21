@@ -1,0 +1,154 @@
+@import "includes/base";
+@import "includes/bs-grid/grid";
+@import "includes/variables";
+@import "includes/tooltips";
+
+.h2{
+	margin: 0;
+	font-size: map-get($font-sizes, xlarge);
+	@media (max-width: 480px) {
+		font-size: map-get($font-sizes, large_);
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.center-block{
+	justify-content: center;
+}
+
+.text-right{
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+	.text-right-xs-none{
+	  justify-content: flex-start;		
+	}
+}
+
+.justify-center{
+	height: 100%;
+  align-items: center;
+}
+
+.box{ 
+	&__payment{
+		text-align: center;
+		border-radius: 3px;
+		border: 1px solid map-get($backgrounds, 'gray01');
+		background-color: #f7f7f7;
+		padding: 45px 45px 92px 45px;
+		height: 100%;
+		max-width: 92%;
+		&--title{
+			font-size: map-get($font-sizes, large);
+		}
+	}
+	&__payment-group{
+		.logo-payment{
+			&:not(:first-child){
+				margin-left: 5px;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		&__payment{
+			max-width: 100%;
+			padding: 12px 17px;
+			margin-top: 20px;
+			height: auto;
+			&--title{
+				font-size: map-get($font-sizes, xbase);
+				margin-bottom: 0 !important
+			}
+			&--button{
+				img{
+					max-width: 100px;
+					float: right;
+				}
+			}
+			&--title{
+				margin-bottom: 0;
+		    display: flex;
+		    align-items: center;
+		    height: 100%;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		&__payment{
+			&--title{
+				font-size: map-get($font-sizes, base);
+			}
+		}
+		&__payment-group{
+			margin-top: 20px;
+			.logo-payment{
+				img{
+					width: 41px;
+				}
+				&:not(:first-child){
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+#icon_question{
+	content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  z-index: 1;
+  background: transparent url(/img/sprite.svg#icon-question) 50% 50% no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);  
+  .tooltip-card{
+  	display: none;
+  }
+  @media (max-width: 480px) {
+  	left: auto;
+  	right: 10px;
+	}
+}
+#icon_question.active{
+	.tooltip-card{
+		display: block;
+	}
+}
+
+.footer{
+	margin-top: -43px;
+	@media (max-width: 767px) {
+  	margin-top: 20px;
+	}
+}
+
+
+.hidden-xs{
+	display: block;
+}
+.visible-xs{
+	display: none;
+}
+@media (max-width: 480px) {
+	.hidden-xs{
+		display: none;
+	}
+	.visible-xs{
+		display: block;
+	}
+	.mb-5{
+		margin-bottom: 15px !important;
+	}
+}
+

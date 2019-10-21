@@ -1,0 +1,46 @@
+$backgrounds: (
+	gray:		#f7f7f7,
+	gray01:	#dddddd,
+	red: 		#ffebee,
+	yellow: #ff9000,
+	white: 	#ffffff
+);
+
+$colors: (
+	base: 	#444444,
+	gray:		#888888,
+	gray01:	#cccccc,
+	red: 		#ef5350,
+	white: 	#ffffff,
+	brown:  #fd7722,
+);
+
+$gradient: (
+	from:   #ffa300,
+	to: 	  #f70,
+	from_h: #ec9c0d,
+	to_h: 	#dc6a06
+);
+
+$font-sizes: (
+	xsmall: 12px,
+	small: 	13px,
+	base:	 	14px,
+	xbase:	16px,
+	large:	18px,
+	large_:	20px,
+	xlarge: 24px
+);
+
+$line-heights: (
+	base: 	1.42857
+);
+
+$font-families: (
+	base: 	"Arial",
+	symbol: "Apple Symbols"
+);
+
+$border-radiuses: (
+	base: 	3px
+);

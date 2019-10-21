@@ -1,0 +1,25 @@
+@import "stylesheet";
+@import "variables";
+@import "buttons";
+@import "forms";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+	line-height: map-get($line-heights, base);
+	font-size: map-get($font-sizes, base);
+	font-weight: 500;
+	color: map-get($colors, base);
+  font-family: map-get($font-families, 'base');
+  background: map-get($colors, white);
+  position: relative;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}

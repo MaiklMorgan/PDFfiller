@@ -1,0 +1,107 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+  .container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+
+@if $enable-grid-classes {
+  .container-fluid {
+    @include make-container();
+  }
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+  }
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
+
+.row-15{
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+
+  > [class*="col"]{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
+
+.flex-rows{
+  & > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    & > [class*='col-'] {
+      display: block;
+    }
+    .box--pointer-left:before {
+        display: none;
+    }
+  }
+}
+
+.row{
+  @media (min-width: 767px) {
+    .col-md-12.col-sm-6.offset-sm-4 {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .col-xs-7{
+      width: 60%;
+    }
+    .col-xs-5{
+      width: 40%;
+    }
+    .col-xs-6{
+      width: 50%;
+    }
+    .col-xs-12{
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    margin: 0;
+    & > [class*='col-'] {
+      padding: 0 10px 0 0;
+    }
+  }
+}
+

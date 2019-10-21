@@ -1,0 +1,29 @@
+.btn{
+	font-weight: 700;
+	border-radius: 3px;
+	box-shadow: none;
+	transition: all .4s ease 0s;
+	cursor: pointer;
+
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+    .open > &.dropdown-toggle {
+    	box-shadow: none;
+    }
+}
+
+.btn-warning{
+  padding: 13px;
+  width: 100%;
+  color: map-get($colors, white);
+  border: 1px solid;
+  border-color: map-get($colors, brown);
+  background: map-get($colors, yellow);
+  background-image: linear-gradient(map-get($gradient, from),map-get($gradient, to));
+	&:hover{
+    background-image: linear-gradient(map-get($gradient, from_h),map-get($gradient, to_h));
+	}
+}
